@@ -1,0 +1,162 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+    <link rel="stylesheet" href="main.css">
+    <script defer src="index.min.js"></script>
+    <title>Simon Chan</title>
+</head>
+
+<body>
+    <main>
+        <section id="hero" class="hero">
+            <div class="hero__intro">
+                <div class="hero__text">
+                    <h1><span>John Doe</span>
+                    </h1>
+                    <h4><span>I'm a web developer </span></h4>
+                    <a href="#projects" class="btn">See my work</a>
+                    <a href="#contact" class="btn">Contact</a>
+
+                </div>
+                <div class="hero__logo">
+                    <img class="gear-1" src="assets/gear.svg" alt="">
+                    <img class="gear-2" src="assets/gear.svg" alt="">
+                    <img class="screen" src="assets/screen.svg" alt="">
+                </div>
+            </div>
+        </section>
+        <section id="overview" class="overview">
+            <div class="grid">
+                <div class="about">
+                    <h2><span>More about me</span></h2>
+                    <p>I have been learning web development for about a year now, and like to build interesting projects
+                        to develop my expertise.
+                    </p>
+                    <p>I am open to invitation for a great team and collaborative projects</p>
+                </div>
+                <div class="skills">
+                    <h2><span>Skills</span></h2>
+                    <ul>
+                        <li>Javascript</li>
+                        <li>Vue JS</li>
+                        <li>SASS</li>
+                        <li>PHP</li>
+                        <li>HTML/CSS</li>
+                        <li>Python</li>
+                        <li>PostgreSQL</li>
+                        <li>Google Firebase</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section id="projects" class="projects">
+            <h2><span>My Projects</span></h2>
+            <div class="projects__lists">
+                <article>
+                    <div class="project__image">
+                        <img src="/assets/mockup.png" alt="">
+                    </div>
+                    <h3>Youtube Music Player</h3>
+                    <p>A responsive online music player that can search Youtube videos and play them as music.
+                        Built only on vanilla javascript and ES6 modules,
+                        it utilises the YouTube Player API for playback functions, as well as Youtube Data API for
+                        auto-complete search bar.
+                    </p>
+                    <div class="project__action">
+                        <a href="*">Visit</a>
+                        <a href="*">Source Code</a>
+                    </div>
+                </article>
+                <article>
+                    <div class="project__image">
+                        <img src="/assets/mockup.png" alt="">
+                    </div>
+                    <h3>Flashback News</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum nisi ducimus architecto quod
+                        adipisci
+                        aperiam Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, nemo, magni nobis,
+                        excepturi
+                        atque est error vero voluptatibus maxime pariatur quae tempore impedit debitis velit.</p>
+                    <div class="project__action">
+                        <a href="*">Visit</a>
+                        <a href="*">Source Code</a>
+                    </div>
+                </article>
+                <article>
+                    <div class="project__image">
+                        <img src="/assets/mockup.png" alt="">
+                    </div>
+                    <h3>Mapbox Blog</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum nisi ducimus architecto quod
+                        adipisci
+                        aperiam Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, nemo, magni nobis,
+                        excepturi
+                        atque est error vero voluptatibus maxime pariatur quae tempore impedit debitis velit.</p>
+                    <div class="project__action">
+                        <a href="*">Visit</a>
+                        <a href="*">Source Code</a>
+                    </div>
+                </article>
+            </div>
+
+
+
+
+        </section>
+        <section id="contact" class="contact">
+            <h2><span>Get In Touch</span></h2>
+            <form id="contact-form">
+                <div class="form-control">
+                    <label>Name</label>
+                    <input class="input-field" type="text" name="name">
+                    <div class="error hidden">Name is required</div>
+                </div>
+
+                <div class="form-control">
+                    <label>Email</label>
+                    <input class="input-field" type="text" name="email">
+                    <div class="error hidden">Email is invalid</div>
+                </div>
+
+                <div class="form-control">
+                    <label>Subject</label>
+                    <input class="input-field" type="text" name="subject">
+                    <div class="error hidden">Subject is required</div>
+                </div>
+                <div class="form-control">
+                    <label>Message</label>
+                    <textarea class="input-field" name="message"></textarea>
+                    <div class="error hidden">Message is required</div>
+                </div>
+
+                <button id="submitBtn" type="submit" class="btn">Send
+                </button>
+                <!-- <div id="spinner"></div> -->
+
+
+            </form>
+        </section>
+
+    </main>
+
+    <!-- <div class="toast">
+        <div class="check"></div>
+        <span>Your message has been sent</span>
+        <button>
+            &times;
+        </button>
+    </div> -->
+
+
+    <!-- Cursor -->
+    <div class="cursor">
+    </div>
+
+
+</body>
+
+</html>
