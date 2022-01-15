@@ -1,0 +1,36 @@
+// theme colors
+
+$gray:#a0a0a0 !default;
+$accent:#EF3E23;
+$bg-cl:#E4E3E3 !default;
+$text-cl:#1F1F1F !default;
+$purple-cl:#B79D8D !default;
+$white-cl:#F7F2EF;
+
+// color palette
+// $colors: (
+//   "primary": $primary,
+//   "secondary": $secondary,
+//   "error": $error,
+//   "info": $info,
+//   "black": black,
+//   "white": white,
+// ) !default;
+
+
+// spacing
+$base-padding: 0.5rem !default;
+$base-margin: 0.75rem !default;
+
+$section-padding:2.1rem 0 2.1rem;
+$cursor-anim-padding:.85rem;
+// borders
+$base-border-thickness: 1px !default;
+$base-border-radius: 20px !default;
+$soft-border-radius:6px;
+$border-low-profile:1px solid #a0a0a0;
+
+// box-shadow
+$base-box-shadow: 1px 2px 2px rgba(0,0,0,0.1) !default;
+$soft-box-shadow: 1px 1px 2px rgba(0,0,0,0.1) !default;
+$hover-box-shadow: 5px 8px 8px rgba(0,0,0,0.1) !default;

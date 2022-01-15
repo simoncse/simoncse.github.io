@@ -1,0 +1,48 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Contact Form Test</h1>
+    <section id="contact" class="contact">
+        <h2><span>Get In Touch</span></h2>
+        <form id="contact-form">
+            <div class="form-control">
+                <label>Name</label>
+                <input class="input-field" type="text" name="name">
+                <div class="error hidden">Name is required</div>
+            </div>
+
+            <div class="form-control">
+                <label>Email</label>
+                <input class="input-field" type="text" name="email">
+                <div class="error hidden">Email is invalid</div>
+            </div>
+
+            <div class="form-control">
+                <label>Subject</label>
+                <input class="input-field" type="text" name="subject">
+                <div class="error hidden">Subject is required</div>
+            </div>
+            <div class="form-control">
+                <label>Message</label>
+                <textarea class="input-field" name="message"></textarea>
+                <div class="error hidden">Message is required</div>
+            </div>
+
+            <input id="submitBtn" type="submit" value="Send" class="btn">
+        </form>
+    </section>
+
+
+</body>
+
+<script src="test.js"></script>
+
+</html>

@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700&display=swap');
+
+
+html {
+    font-family: 'Roboto', sans-serif;
+    overflow: auto;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    @include scrollbars(14px,$text-cl,$white-cl);
+}
+
+
+
+
+body {
+    width:100%;
+    min-height: 100vh;
+    background:$bg-cl;
+    color:$text-cl;
+
+
+}
+
+main {
+    width:100%;
+}

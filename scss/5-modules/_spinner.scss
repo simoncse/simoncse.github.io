@@ -1,0 +1,25 @@
+
+
+.spinner::after {
+    content: "";
+    position: absolute;
+    width: 23px;
+    height: 23px;
+    left:50%;
+    transform: translateX(-50%);
+
+    border: 2px solid #f3f3f3;
+    border-top: 3px solid $purple-cl;
+    border-radius: 100%;
+    will-change: transform;
+    animation: spin 1s infinite linear
+  }
+  
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }

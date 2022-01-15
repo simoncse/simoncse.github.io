@@ -1,0 +1,80 @@
+.contact {
+
+    min-height: 70vh;
+
+    padding:$section-padding;
+    
+
+    h2 {
+        text-align: center;
+    }
+
+    form {
+        margin:1.5rem auto;
+        width:100%;
+        max-width: 400px;
+        padding:0 1.2rem 1.2rem 1.2rem;
+    }
+
+}
+
+
+.form-control {
+    margin-bottom: 1rem;
+    > * {
+        width: 100%;
+        display:block;
+    }
+
+    label {
+        color:$text-cl;
+        font-size: .9rem;
+        font-weight: 500;
+        margin-bottom: 0.95rem;
+    }
+
+    .input-field {
+        padding:0.5rem 0.6rem;
+        border-radius: 5px;
+        border:1px solid lighten($gray, 20);
+
+        &:focus-within{
+            outline: none;
+            box-shadow: $base-box-shadow;
+        }
+        
+        &.invalid {
+            border: 1px solid lighten(red,25);
+        }
+    }
+
+    textarea{
+        min-height: 20ch;
+        resize: none;
+    }
+}
+
+#submitBtn{
+    margin-top: .25rem;
+    width:100%;
+    @include btn-theme-fill($text-cl);
+    font-weight: 700;
+    font-size:1rem;
+    position:relative;
+
+    &.spinner {
+        pointer-events: none;
+        color:transparent;
+    }
+}
+
+.error {
+    font-size: 0.785rem;
+    color:red;
+    margin-top:0.5rem;
+
+}
+
+.hidden {
+    display:none;
+}

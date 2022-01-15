@@ -1,0 +1,27 @@
+// @import "~flatpickr/dist/flatpickr.min.css";
+// HELPERS
+@import '1-helpers/variables';
+@import '1-helpers/mixins';
+@import '1-helpers/breakpoints';
+
+//TOOLS
+@import '2-tools/scrollbar';
+
+//BASICS
+@import '3-basics/reset';
+@import '3-basics/base';
+@import '3-basics/buttons';
+@import '3-basics/links';
+@import '3-basics/typography';
+
+//LAYOUT
+@import '4-layout/body';
+@import '4-layout/hero';
+@import '4-layout/overview';
+@import '4-layout/projects';
+@import '4-layout/contact';
+
+//MODULES
+@import '5-modules/cursor';
+@import '5-modules/toast';
+@import '5-modules/spinner'

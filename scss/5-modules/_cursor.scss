@@ -1,0 +1,56 @@
+.cursor {
+    pointer-events: none;
+    position: fixed;
+    width: 8px;
+    height: 8px;
+    top: -8px;
+    left: -8px;
+    z-index: 10;
+    display: block;
+    background: white;
+    mix-blend-mode: difference;
+    border-radius: 0;
+
+    opacity: 0;
+    // transform-origin: center center;
+    transform: rotate(45deg);
+
+
+
+    // &:after {
+    //     transform: rotate(-135deg);
+    // }
+    
+
+
+}
+
+.cross {
+    &:before, &:after {
+        content:"";
+        position:absolute;
+        width:14px;
+        height:1px;
+        border-radius: 90%;
+        background: white;
+        opacity: .5;
+        top:50%;
+        left:50%;
+        transform:translate(-50%,-50%) rotate(135deg);
+    }
+
+    
+    &:before {
+        transform-origin: center;
+        transform: translate(-50%,-50%) rotate(-135deg);
+    }
+}
+
+
+.btn-test {
+    position:fixed;
+    bottom:30;
+    right:20;
+
+}
+

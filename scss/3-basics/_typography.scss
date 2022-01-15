@@ -1,0 +1,23 @@
+h1,h2, h3, h4 {
+    span {
+    @include cursorAnimPadding;
+    }
+}
+
+
+
+
+h2{
+    margin-bottom:1em;
+    font-weight: 900;
+    letter-spacing: .075rem;
+    word-spacing: 0.15rem;
+
+}
+
+
+p {
+    max-width: 45ch;
+    line-height: 1.5;
+    word-spacing: .225rem;
+}
