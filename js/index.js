@@ -22,7 +22,7 @@ sections.forEach(section => {
 
 
 // Contact Form
-const URL = 'https://simoncse.netlify.app/api/sendmail';
+const URL = 'https://61e2c86ecccf0a32a107e243--simoncse.netlify.app/sendmail';
 
 contactForm.handleSubmit(async (formData) => {
     try {
