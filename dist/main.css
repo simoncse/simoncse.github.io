@@ -130,6 +130,7 @@ section:last-child {
     margin-top: 0;
   }
 }
+
 .hero__text h1 {
   font-size: 3.8rem;
 }
@@ -539,5 +540,3 @@ section:last-child {
     transform: rotate(360deg);
   }
 }
-
-/*# sourceMappingURL=main.css.map */
