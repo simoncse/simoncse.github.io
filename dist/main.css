@@ -117,7 +117,6 @@ section:last-child {
 }
 
 .hero__intro {
-  margin-top: 3.45rem;
   width: 90%;
   max-width: 1700px;
   display: flex;
@@ -540,3 +539,5 @@ section:last-child {
     transform: rotate(360deg);
   }
 }
+
+/*# sourceMappingURL=main.css.map */

@@ -9,32 +9,18 @@
 }
 
 .hero__intro {
-    margin-top: 3.45rem;
-
     @include lg{
         margin-top:0;
     }
     width: 90%;
     max-width:1700px;
-    // height:80%;
     display:flex;
     gap:1rem;
     justify-content: space-between;
     align-items:center;
-    flex-wrap: wrap;
-    
-        
-        > * {
-            // @include showBorder;
-        }
-
-        > *:first-child {
-        
-        }
-        
+    flex-wrap: wrap;    
 
 
-        // @include showBorder(purple);
     }
 
 .hero__text {
