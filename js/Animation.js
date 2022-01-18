@@ -1,7 +1,7 @@
 import { gsap } from "gsap";
 
 const heroAnim = gsap.timeline({ repeat: 0, delay: .45 });
-const overviewAnim = gsap.timeline({ paused: true });
+const overviewAnim = gsap.timeline({ paused: true, delay: .35 });
 const projectsAnim = gsap.timeline({ paused: true });
 
 heroAnim
@@ -18,7 +18,7 @@ overviewAnim
 
 
 projectsAnim
-    .from('.projects article', { opacity: 0, x: -46, duration: .75, ease: 'power3.easeInOut', stagger: 0.6 })
+    .from('.projects__list article', { opacity: 0, x: -50, duration: .75, ease: 'power3.easeInOut', stagger: 0.6 })
 
 
 let firstTime = true;
@@ -29,7 +29,7 @@ export default {
     tracking(entries) {
 
         entries.forEach(entry => {
-            console.log(`${entry.target.id} : ${entry.isIntersecting}`);
+            // console.log(`${entry.target.id} : ${entry.isIntersecting}`);
 
 
             if (entry.target.id === 'overview' && entry.isIntersecting) {
@@ -37,7 +37,6 @@ export default {
             }
 
             if (entry.target.id === 'hero' && !entry.isIntersecting) {
-                console.log("leaving hero");
                 heroAnim.reverse();
                 firstTime = false;
             }
@@ -51,8 +50,6 @@ export default {
             }
 
             if (entry.target.id === 'projects' && !entry.isIntersecting) {
-                console.log("leaving projects")
-                projectsAnim.reverse();
             }
 
             if (entry.target.id === 'overview' && !entry.isIntersecting) {

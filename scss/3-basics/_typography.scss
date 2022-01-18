@@ -5,19 +5,29 @@ h1,h2, h3, h4 {
 }
 
 
+// h1 {
+//     font-size:.25rem;
+// }
 
 
 h2{
-    margin-bottom:1em;
     font-weight: 900;
     letter-spacing: .075rem;
     word-spacing: 0.15rem;
 
 }
 
+h3 {
+    letter-spacing: .075rem;
+}
+
 
 p {
     max-width: 45ch;
+    width: 39ch;
     line-height: 1.5;
     word-spacing: .225rem;
+    font-size:1.05rem;
 }
+
+

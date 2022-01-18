@@ -6,15 +6,19 @@ import Toast from "./Toast.js";
 
 //Cursor Animation
 const cursor = new Cursor('.cursor');
-cursor.setHoverSelectors(['.about>p', 'h3', , '.skills > ul', 'h2>span']);
+cursor.setHoverSelectors(
+    ['.about>p', 'h3', , '.skills > ul', 'h2>span', '.btn']
+);
 cursor.setHoverSelectors(['h1>span', 'h4>span', '.screen'], 'large');
 cursor.runInteractive();
 
 
-//Section Animation
-const observer = new IntersectionObserver(Animation.tracking, { threshold: [0.40] })
+// Section Animation
+const observer = new IntersectionObserver(Animation.tracking, { threshold: [0.20, 0.40] })
+
 
 const sections = document.querySelectorAll('section');
+console.log(sections);
 sections.forEach(section => {
     observer.observe(section);
 

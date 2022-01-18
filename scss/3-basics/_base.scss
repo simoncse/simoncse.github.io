@@ -8,6 +8,21 @@ html {
     overflow-y: scroll;
     scroll-behavior: smooth;
     @include scrollbars(14px,$text-cl,$white-cl);
+    
+
+    font-size:13.5px;
+
+    @include md {
+        font-size:14.5px;
+    }
+
+    @include lg {
+        font-size:15.5px;
+    }
+
+    @include xl {
+        font-size:16.5px;
+    }
 }
 
 
@@ -18,10 +33,12 @@ body {
     min-height: 100vh;
     background:$bg-cl;
     color:$text-cl;
+    // overflow:hidden;
 
 
 }
 
 main {
     width:100%;
+    overflow-x:hidden;
 }
