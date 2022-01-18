@@ -1,24 +1,28 @@
+import Setting from "./Setting.js";
 import Cursor from "./cursor.js";
 import Animation from "./Animation.js";
 import contactForm from "./contactForm.js";
 import Toast from "./Toast.js";
 
 
-//Cursor Animation
-const cursor = new Cursor('.cursor');
-cursor.setHoverSelectors(
-    ['.about>p', 'h3', , '.skills > ul', 'h2>span', '.btn']
-);
-cursor.setHoverSelectors(['h1>span', 'h4>span', '.screen'], 'large');
-cursor.runInteractive();
+if (!Setting.isMobile()) {
+    //Cursor Animation
+    const cursor = new Cursor('.cursor');
+    cursor.setHoverSelectors(
+        ['.about>p', 'h3', , '.skills > ul', 'h2>span', '.btn']
+    );
+    cursor.setHoverSelectors(['h1>span', 'h4>span', '.screen'], 'large');
+    cursor.runInteractive();
+}
+
 
 
 // Section Animation
-const observer = new IntersectionObserver(Animation.tracking, { threshold: [0.20, 0.40] })
+const observer = new IntersectionObserver(Animation.tracking, { threshold: [.20, .40] })
 
 
 const sections = document.querySelectorAll('section');
-console.log(sections);
+
 sections.forEach(section => {
     observer.observe(section);
 
