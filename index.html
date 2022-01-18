@@ -15,7 +15,8 @@
         <section id="hero" class="hero">
             <div class="hero__intro">
                 <div class="hero__text">
-                    <h1><span>John Doe</span>
+                    <h1>
+                        <span>John Doe</span>
                     </h1>
                     <h4><span>I'm a web developer </span></h4>
                     <a href="#projects" class="btn">See my work</a>
@@ -30,7 +31,7 @@
             </div>
         </section>
         <section id="overview" class="overview">
-            <div class="grid">
+            <div class="flex">
                 <div class="about">
                     <h2><span>More about me</span></h2>
                     <p>I have been learning web development for about a year now, and like to build interesting projects
@@ -55,7 +56,7 @@
         </section>
         <section id="projects" class="projects">
             <h2><span>My Projects</span></h2>
-            <div class="projects__lists">
+            <div class="projects__list">
                 <article>
                     <div class="project__image">
                         <img src="/assets/mockup.png" alt="">
@@ -73,14 +74,12 @@
                 </article>
                 <article>
                     <div class="project__image">
-                        <img src="/assets/mockup.png" alt="">
+                        <img src="/assets/projects/fn_thumb.webp" alt="">
                     </div>
                     <h3>Flashback News</h3>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum nisi ducimus architecto quod
-                        adipisci
-                        aperiam Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, nemo, magni nobis,
-                        excepturi
-                        atque est error vero voluptatibus maxime pariatur quae tempore impedit debitis velit.</p>
+                    <p>An online archiver for news headlines for mainstream media in the U.S. It stores headlines and
+                        screenshots for each news outlets every 30 minutes
+                        Current available news outlets are Fox News and CNN.</p>
                     <div class="project__action">
                         <a href="*">Visit</a>
                         <a href="*">Source Code</a>
@@ -91,20 +90,18 @@
                         <img src="/assets/mockup.png" alt="">
                     </div>
                     <h3>Mapbox Blog</h3>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum nisi ducimus architecto quod
-                        adipisci
-                        aperiam Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, nemo, magni nobis,
-                        excepturi
-                        atque est error vero voluptatibus maxime pariatur quae tempore impedit debitis velit.</p>
+                    <p>Made with Vue JS, A travel map application where users can pin their location and share reviews
+                        with others.
+                        It is powered by Mapbox GL JS which renders interactive maps. Features such as
+                        authentication and real-time database are managed by Google's Firebase on the backend.
+
+                    </p>
                     <div class="project__action">
                         <a href="*">Visit</a>
                         <a href="*">Source Code</a>
                     </div>
                 </article>
             </div>
-
-
-
 
         </section>
         <section id="contact" class="contact">
@@ -135,21 +132,13 @@
 
                 <button id="submitBtn" type="submit" class="btn">Send
                 </button>
-                <!-- <div id="spinner"></div> -->
+
 
 
             </form>
         </section>
 
     </main>
-
-    <!-- <div class="toast">
-        <div class="check"></div>
-        <span>Your message has been sent</span>
-        <button>
-            &times;
-        </button>
-    </div> -->
 
 
     <!-- Cursor -->
