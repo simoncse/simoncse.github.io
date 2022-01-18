@@ -38,10 +38,9 @@ contactForm.handleSubmit(async (formData) => {
             method: "POST",
             body: JSON.stringify(formData)
         })
-        const { result } = await res.json();
+        await res.json();
         Toast.show("Your message has been sent.");
         contactForm.resetInput();
-        console.log(result);
 
     } catch (error) {
         Toast.show("Cannot send the message. Please try again.", "error");

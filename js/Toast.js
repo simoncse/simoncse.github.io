@@ -32,7 +32,6 @@ fadeIn.from(toast, { x: 65, autoAlpha: 0, duration: 0.7 })
 
 
 closeBtn.addEventListener('click', e => {
-    console.log(e.target.parentElement);
     fadeIn.reverse()
 })
 
