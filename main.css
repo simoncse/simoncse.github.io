@@ -274,7 +274,7 @@ section:last-child {
   overflow-x: hidden;
   grid-template-columns: 320px;
   justify-content: center;
-  align-items: start;
+  align-items: center;
   gap: 1.7rem;
 }
 @media (min-width: 746px) {
