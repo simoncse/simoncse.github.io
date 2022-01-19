@@ -14,6 +14,7 @@ export default class LanguageProvider {
 
     constructor(selector) {
         this.dropdown = document.querySelector(selector);
+        // this.btn = this.dropdown.querySelector('button');
         this.langOptions = this.dropdown.querySelector('.dropdown-content');
 
         this.lang = document.documentElement.lang;
@@ -21,14 +22,17 @@ export default class LanguageProvider {
         document.addEventListener('click', e => {
             const isDropdown = e.target.closest(selector)
 
+            if (isDropdown && e.target.matches('button')) {
+                this.langOptions.classList.toggle('hide');
+                return;
+            }
+
             if (isDropdown) {
-                this.dropdown.classList.add('active');
                 this.langOptions.classList.remove('hide');
                 return;
             }
 
             if (!isDropdown) {
-                this.dropdown.classList.remove('active');
                 this.langOptions.classList.add('hide');
                 return;
 

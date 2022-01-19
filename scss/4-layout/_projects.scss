@@ -18,10 +18,11 @@
 
 
 
-    grid-template-columns: 320px;
+    //see typograhpy for paragraph max-width;
+    grid-template-columns: 50ch;
     justify-content: center;
-    align-items: center;
 
+    align-items: center;
     @include md {
         grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     }
@@ -53,11 +54,6 @@
         h3 {
             align-self: flex-start;
         }
-
-        p {
-            line-height: 1.4;
-        }
-
     }   
 }
 

@@ -47,6 +47,14 @@
 }
 
 .skills {
+
+    h2 {
+        text-align: end;
+
+        @include md {
+            text-align: left;
+        }
+    }
     
     ul {
         max-width: 48ch;
