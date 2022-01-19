@@ -2,8 +2,8 @@ import Setting from "./Setting.js";
 import LanguageProvider from "./LanguageProvider.js";
 import Cursor from "./cursor.js";
 import Animation from "./Animation.js";
-import contactForm from "./contactForm.js";
 import Toast from "./Toast.js";
+import contactForm from "./contactForm.js";
 
 const languageProvider = new LanguageProvider('#dropdown');
 
@@ -35,20 +35,24 @@ sections.forEach(section => {
 const URL = 'https://simoncse.netlify.app/sendmail';
 
 contactForm.handleSubmit(async (formData) => {
+    const messages = {
+        success: languageProvider.messages('contactSuccess'),
+        error: languageProvider.messages('contactError')
+    }
+
     try {
         const res = await fetch(URL, {
             method: "POST",
             body: JSON.stringify(formData)
         })
         await res.json();
-        Toast.show("Your message has been sent.");
+        Toast.show(messages.success);
         contactForm.resetInput();
 
     } catch (error) {
-        Toast.show("Cannot send the message. Please try again.", "error");
+        Toast.show(messages.error, "error");
         console.log(error);
     }
 
 })
-
 

@@ -39,7 +39,7 @@ $label-size:.95rem;
         font-size: $label-size;
         font-weight: 500;
         display:block;
-        // width:100%;
+        cursor: pointer;
         text-align: center;
     }
 
@@ -77,9 +77,6 @@ $label-size:.95rem;
     max-height: 100px;
     @include trans(.25s ease-in-out);
 
-    a {
-        margin-top: .1rem;
-    }
     &.hide {
         max-height: 0;
         opacity: 0;
