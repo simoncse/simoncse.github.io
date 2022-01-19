@@ -1,0 +1,94 @@
+$label-size:.95rem;
+
+.relative {
+    position:relative;
+}
+
+.lang-menu {
+    position: absolute;
+    top:2.5rem;
+    right:5%;
+
+    width:5.75rem;
+   
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    svg {
+        width:22.5%;
+    }
+    
+}
+
+.dropdown {
+    // @include showBorder;
+    margin-top: .15rem;
+    padding:0 0.5rem 0 0;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap:.35rem;
+    cursor: pointer;
+    box-shadow: none;
+    border-radius: 5px;
+
+    overflow: hidden;
+    
+    button,a{
+        font-size: $label-size;
+        font-weight: 500;
+        display:block;
+        // width:100%;
+        text-align: center;
+    }
+
+    button {
+        background: none;
+        border:none;
+        cursor:pointer;
+    }
+
+
+    a {
+        color:$text-cl;
+    }
+
+
+    &.active{
+        box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+    }
+    
+    // @include showBorder(green);
+    position: relative;
+    &::after {
+        content:'';
+        position: absolute;
+        border: 4px solid transparent;
+        border-top: 4px solid $text-cl;
+        top:.55rem;
+        right:7.5%;
+        transform: translateY(-25%);
+    }
+}
+
+
+.dropdown-content {
+    max-height: 100px;
+    @include trans(.25s ease-in-out);
+
+    a {
+        margin-top: .1rem;
+    }
+    &.hide {
+        max-height: 0;
+        opacity: 0;
+    }
+}
+
+
+
+
+
+
+

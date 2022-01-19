@@ -3,12 +3,16 @@
     display: grid;
     place-items: center;
 
+    @include showBorder;
     
 
     font-family: 'Raleway',sans-serif;
 }
 
 .hero__intro {
+
+    
+
     @include lg{
         margin-top:0;
     }

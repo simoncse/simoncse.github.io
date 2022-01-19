@@ -1,9 +1,11 @@
 import Setting from "./Setting.js";
+import LanguageProvider from "./LanguageProvider.js";
 import Cursor from "./cursor.js";
 import Animation from "./Animation.js";
 import contactForm from "./contactForm.js";
 import Toast from "./Toast.js";
 
+const languageProvider = new LanguageProvider('#dropdown');
 
 if (!Setting.isMobile()) {
     //Cursor Animation
