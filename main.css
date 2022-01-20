@@ -423,12 +423,13 @@ section:last-child {
   margin-left: auto;
   margin-top: 0.8em;
   margin-bottom: 1.2em;
+  margin-right: 0.6em;
 }
 .project__action a {
   margin-left: 1rem;
   text-decoration: none;
   color: #EF3E23;
-  padding: 0 1rem;
+  padding: 0.25em 0.65em;
 }
 .project__action a:hover {
   color: #d0290f;
