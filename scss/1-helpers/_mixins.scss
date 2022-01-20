@@ -41,3 +41,22 @@
     padding: 0.65rem;
     margin-left: -0.65rem;
 }
+
+
+@mixin bg-image($url){
+    background-image: url($url);
+    background-position: center;
+    background-size: cover;
+    
+    position:relative;
+    isolation: isolate;
+
+    &::after{
+        content:'';
+        position: absolute;
+        inset:0;
+        background: rgb(216, 216, 216);
+        mix-blend-mode: screen;
+        z-index: -1;
+    }
+}

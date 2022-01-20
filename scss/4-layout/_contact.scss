@@ -1,5 +1,7 @@
 .contact {
 
+    @include bg-image('/assets/bg_4.jpg');
+
     min-height: 70vh;
 
     padding:$section-padding;
