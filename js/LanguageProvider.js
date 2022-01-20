@@ -4,8 +4,8 @@ const PHRASES = {
         contactError: "Cannot send the message. Please try again."
     },
     zh: {
-        contactSucess: '',
-        contactError: ''
+        contactSucess: '信息發送成功。',
+        contactError: '發送失敗，請再試一次。'
     }
 }
 
