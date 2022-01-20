@@ -1,17 +1,13 @@
 $label-size:.95rem;
 
 .lang-menu {
-    // margin-top:2.5rem;
-
+    align-self: end;
     
     font-size:22px;
     @include md {
         font-size:17.5px;
 
     }
-
-
-
     width:6.5em;
 
 

@@ -1,10 +1,10 @@
 .hero {
     height: 100vh;
     display: grid;
-    place-items: center;
-    gap:3.5rem;
-    align-content: space-evenly;
+    justify-items: center;
+    grid-template-rows: 1fr 5fr;
     @include bg-image('/assets/bg.jpg');
+
 
 }
 
@@ -18,10 +18,15 @@
     align-items:center;
     flex-wrap: wrap;    
 
-
-    }
+}
 
 .hero__text {
+
+    padding-top:100px;
+
+    @include md {
+        padding-top:0;
+    }
     h1{
         font-size:3.8rem;
         
@@ -49,11 +54,8 @@
 
 .hero__outer {
     margin-top:1.45rem;
-    display:flex;
-    justify-content: center;
-
     img {
-        width:2.2rem;
+        width:2.5rem;
     }
 }
 
@@ -61,24 +63,13 @@
 
 .hero__logo {
     flex:0 0 400px;
-    max-width: 100%;
-    max-height: 350px;
     margin-left: auto;
-    position:relative;
-    // width:400px;
-    height:400px;
+    position: relative;
 
+    max-width: 75%;
     
     .screen {
-        position: absolute;
-        top:50%;
-        left:50%;
-        transform: translate(-50%,-50%);
-        width:80%;
-
-        @include lg{
             width: 100%;
-        }
     }
 
     .gear-1,.gear-2 {
@@ -92,11 +83,11 @@
 
     .gear-1{
         top:40%;
-        left:35%;
+        left:34%;
     }
 
     .gear-2 {
-        top:33%;
-        left:53%;
+        top:31.5%;
+        left:52.5%;
     }
 }

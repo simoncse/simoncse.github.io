@@ -15,7 +15,7 @@
 
 
     //see typograhpy for paragraph max-width;
-    grid-template-columns: 50ch;
+    grid-template-columns: .75fr;
     justify-content: center;
 
     align-items: center;
@@ -33,6 +33,8 @@
 
         display:flex;
         flex-direction: column;
+
+        
         gap:.9rem;
 
         box-shadow: $base-box-shadow;
@@ -42,21 +44,16 @@
             @include trans(0.3s ease-in);
         }
 
-
         h3,p {
             padding:0 1rem;
         }
 
-        h3 {
-            align-self: flex-start;
-        }
     }   
 }
 
 
 .project__image{
-    // overflow: hidden;
-    //w:960 h:540
+    max-width:100%;
     
     img {
         // opacity: 20%;

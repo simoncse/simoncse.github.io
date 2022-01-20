@@ -17,6 +17,11 @@
 .about, .skills{
     flex:0 0 auto;
     max-width: 100%;
+
+    p{
+        max-width: 45ch;
+    }
+    
     h2 {
         margin-bottom: 1.25rem;
     }
