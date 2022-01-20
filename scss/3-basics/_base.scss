@@ -1,8 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&display=swap');
 
-
-html {
+html[lang="en"]{
     font-family: 'Roboto', sans-serif;
+}
+
+html[lang="zh"]{
+    font-family: 'Noto Sans TC', sans-serif;
+}
+html {
     overflow: auto;
     overflow-y: scroll;
     scroll-behavior: smooth;
@@ -16,13 +22,14 @@ html {
     }
 
     @include lg {
-        font-size:15.5px;
+        font-size:16px;
     }
 
     @include xl {
-        font-size:16.5px;
+        font-size:18px;
     }
 }
+
 
 
 

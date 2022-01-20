@@ -33,16 +33,21 @@
                 </div>
             </div>
             <div class="hero__intro">
-
                 <div class="hero__text">
                     <h1>
-                        <span>CH</span>
+                        <span>Simon Chan</span>
                     </h1>
-                    <h4><span>I'm a web developer </span></h4>
-                    <a href="#projects" class="btn">See my work</a>
-                    <a href="#contact" class="btn">Contact</a>
-
+                    <h4><span>網站開發員 </span></h4>
+                    <div class="hero__actions">
+                        <a href="#projects" class="btn">瀏覽作品</a>
+                        <a href="#contact" class="btn">聯絡</a>
+                    </div>
+                    <div class="hero__outer">
+                        <a href="https://github.com/simoncse" target="_blank" class="btn"><img src="assets/github.svg"
+                                alt="github"></a>
+                    </div>
                 </div>
+
                 <div class="hero__logo">
                     <img class="gear-1" src="assets/gear.svg" alt="">
                     <img class="gear-2" src="assets/gear.svg" alt="">
@@ -53,14 +58,13 @@
         <section id="overview" class="overview">
             <div class="flex">
                 <div class="about">
-                    <h2><span>More about me</span></h2>
-                    <p>I have been learning web development for about a year now, and like to build interesting projects
-                        to develop my expertise.
+                    <h2><span>簡介</span></h2>
+                    <p>我接觸網頁開發大約一年多，喜歡構建有趣和實用的網頁來掌握前後端的技能。
                     </p>
-                    <p>I am open to invitation for a great team and collaborative projects</p>
+
                 </div>
                 <div class="skills">
-                    <h2><span>Skills</span></h2>
+                    <h2><span>主要技能</span></h2>
                     <ul>
                         <li>Javascript</li>
                         <li>Vue JS</li>
@@ -75,20 +79,18 @@
             </div>
         </section>
         <section id="projects" class="projects">
-            <h2><span>My Projects</span></h2>
+            <h2><span>我的作品</span></h2>
             <div class="projects__list">
                 <article>
                     <div class="project__image">
                         <img src="/assets/projects/fn_thumb.webp" alt="news archiver image">
                     </div>
                     <h3>Flashback News</h3>
-                    <p>A web archiver for news headlines from mainstream media in the U.S. It collects headlines and
-                        screenshots for each news outlets every 30 minutes. Current available news outlets are Fox News
-                        and CNN. Apart from the scraper and database, the web application itself is running in a docker
-                        environment.</p>
+                    <p>Flashback News 是美國媒體新聞標題的記錄庫網頁，它每30分鐘收集每個新聞媒體的標題和屏幕截圖。現時收集的新聞媒體是 Fox
+                        News 和 CNN。除了 Python 爬蟲腳本和 Postgres 數據庫外，整個 Web 應用程序由 Docker 環境裏運行。</p>
                     <div class="project__action">
-                        <a href="*">Visit</a>
-                        <a href="*">Source Code</a>
+                        <a href="http://flashbacknews.tk/" target="_blank">訪問網站</a>
+                        <a href="https://github.com/simoncse/news-archiver" target="_blank">程式碼</a>
                     </div>
                 </article>
                 <article>
@@ -96,14 +98,12 @@
                         <img src="/assets/projects/travel_thumb.webp" alt="travel blog image">
                     </div>
                     <h3>Mapbox Blog</h3>
-                    <p>A travel blog application where users can pin their location and share reviews
-                        with others. Powered by Vue JS on the frontend, Mapbox GL JS is also used to renders interactive
-                        map. Authentication and real-time database are managed by Google's Firebase.
+                    <p>這個旅遊博客網頁的用戶可以標記他們的旅遊位置和分享評論。前端由 Vue.js 構建 、以 Mapbox API 來繪制地圖。後端的登錄系統和實時數據庫由 Google Firebase 管理。
 
                     </p>
                     <div class="project__action">
-                        <a href="*">Visit</a>
-                        <a href="*">Source Code</a>
+                        <a href="https://map-blog-3ce56.firebaseapp.com/" target="_blank">訪問網站</a>
+                        <a href="https://github.com/simoncse/map-blog" target="_blank">程式碼</a>
                     </div>
                 </article>
                 <article>
@@ -111,13 +111,13 @@
                         <img src="/assets/projects/mp_thumb.webp" alt="music player image">
                     </div>
                     <h3>Youtube Music Player</h3>
-                    <p>A responsive music player that search and play Youtube videos as music.
-                        Built on plain javascript and ES6 modules, it utilises YouTube Player API for playback
-                        functions, and Youtube Data API for auto-complete search bar.
+                    <p>這個音樂播放器搜索和播放 Youtube 視頻，並且可以儲存到播放列表。基於JavaScript 和 ES6 模塊構建，利用 YouTube Player API 支援播放功能和 Youtube
+                        Data API 支援搜索功能。
+
                     </p>
                     <div class="project__action">
-                        <a href="*">Visit</a>
-                        <a href="*">Source Code</a>
+                        <a href="https://sad-hamilton-dd401c.netlify.app" target="_blank">訪問網站</a>
+                        <a href="https://github.com/simoncse/musicplayer" target="_blank">程式碼</a>
                     </div>
                 </article>
 
