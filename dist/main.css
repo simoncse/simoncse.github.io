@@ -119,19 +119,6 @@ section:last-child {
   display: grid;
   justify-items: center;
   grid-template-rows: 1fr 5fr;
-  background-image: url("/assets/bg.jpg");
-  background-position: center;
-  background-size: cover;
-  position: relative;
-  isolation: isolate;
-}
-.hero::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: #d8d8d8;
-  mix-blend-mode: screen;
-  z-index: -1;
 }
 
 .hero__intro {
@@ -436,21 +423,8 @@ section:last-child {
 }
 
 .contact {
-  background-image: url("/assets/bg_4.jpg");
-  background-position: center;
-  background-size: cover;
-  position: relative;
-  isolation: isolate;
   min-height: 70vh;
   padding: 3.25rem 0;
-}
-.contact::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: #d8d8d8;
-  mix-blend-mode: screen;
-  z-index: -1;
 }
 .contact h2 {
   text-align: center;
@@ -660,3 +634,5 @@ section:last-child {
     transform: rotate(360deg);
   }
 }
+
+/*# sourceMappingURL=main.css.map */
